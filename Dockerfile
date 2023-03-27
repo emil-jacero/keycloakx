@@ -1,10 +1,11 @@
 # Define the image we are modifying
 ARG VERSION
+ARG SPI_VERSION
 
 # Use our base image
 FROM ubuntu:22.04 as baseimage
 WORKDIR /src
-RUN git clone https://github.com/aerogear/keycloak-metrics-spi.git
+RUN curl -O -J https://github.com/aerogear/keycloak-metrics-spi/releases/download/$SPI_VERSION/keycloak-metrics-spi-$SPI_VERSION.jar
 
 # Intermediate build stage
 FROM quay.io/keycloak/keycloak:$VERSION AS builder
