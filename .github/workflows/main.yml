@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  VERSION: "21.0"
-  SPI_VERSION: "3.0.0"
+  VERSION: "20.0.3"
+  SPI_VERSION: "2.5.3"
   REGISTRY: ghcr.io
 
 jobs:
