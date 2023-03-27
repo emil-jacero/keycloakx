@@ -13,5 +13,5 @@ docker build -t keycloakx:dev --build-arg VERSION=21.0 --build-arg SPI_VERSION=3
 ### pull image
 
 ```shell
-docker pull 
+docker pull ghcr.io/emil-jacero/keycloakx:latest
 ```
